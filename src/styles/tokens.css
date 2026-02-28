@@ -1,0 +1,135 @@
+/* Prism Design Tokens - Meta-inspired Design Language */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* === Colors === */
+
+  /* Brand - Meta Blue */
+  --color-brand-50: #e7f0ff;
+  --color-brand-100: #c3d8fe;
+  --color-brand-200: #9abbfd;
+  --color-brand-300: #6e9dfb;
+  --color-brand-400: #4c84f9;
+  --color-brand-500: #0866ff;
+  --color-brand-600: #0655d4;
+  --color-brand-700: #0444aa;
+  --color-brand-800: #033480;
+  --color-brand-900: #012457;
+
+  /* Neutrals - Dark theme base */
+  --color-gray-950: #0a0a0b;
+  --color-gray-900: #111113;
+  --color-gray-850: #18181b;
+  --color-gray-800: #1c1c1f;
+  --color-gray-750: #232327;
+  --color-gray-700: #2a2a2f;
+  --color-gray-600: #3a3a42;
+  --color-gray-500: #52525e;
+  --color-gray-400: #71717d;
+  --color-gray-300: #a0a0ad;
+  --color-gray-200: #c4c4ce;
+  --color-gray-100: #e2e2e8;
+  --color-gray-50: #f4f4f7;
+
+  /* Semantic colors */
+  --color-success-500: #22c55e;
+  --color-success-bg: rgba(34, 197, 94, 0.12);
+  --color-warning-500: #f59e0b;
+  --color-warning-bg: rgba(245, 158, 11, 0.12);
+  --color-error-500: #ef4444;
+  --color-error-bg: rgba(239, 68, 68, 0.12);
+  --color-info-500: #3b82f6;
+  --color-info-bg: rgba(59, 130, 246, 0.12);
+
+  /* === Dark Theme (default) === */
+  --bg-base: var(--color-gray-950);
+  --bg-surface: var(--color-gray-900);
+  --bg-elevated: var(--color-gray-850);
+  --bg-overlay: var(--color-gray-800);
+  --bg-hover: var(--color-gray-750);
+  --bg-active: var(--color-gray-700);
+
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-brand: rgba(8, 102, 255, 0.5);
+
+  --text-primary: rgba(255, 255, 255, 0.95);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-tertiary: rgba(255, 255, 255, 0.36);
+  --text-brand: var(--color-brand-400);
+  --text-success: var(--color-success-500);
+  --text-warning: var(--color-warning-500);
+  --text-error: var(--color-error-500);
+
+  /* === Spacing === */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* === Radius === */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  /* === Shadows === */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 16px 40px rgba(0, 0, 0, 0.7);
+  --shadow-brand: 0 0 0 3px rgba(8, 102, 255, 0.25);
+  --shadow-drag: 0 20px 60px rgba(0, 0, 0, 0.8);
+
+  /* === Typography === */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 15px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+  --text-2xl: 20px;
+  --text-3xl: 24px;
+
+  /* === Transitions === */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* === Z-Index === */
+  --z-base: 0;
+  --z-above: 10;
+  --z-overlay: 100;
+  --z-modal: 1000;
+  --z-tooltip: 2000;
+}
+
+/* Light theme override */
+[data-theme="light"] {
+  --bg-base: #f8f9fa;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f1f3f4;
+  --bg-overlay: #e8eaed;
+  --bg-hover: #e8eaed;
+  --bg-active: #dadce0;
+
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --border-default: rgba(0, 0, 0, 0.1);
+  --border-strong: rgba(0, 0, 0, 0.16);
+
+  --text-primary: rgba(0, 0, 0, 0.9);
+  --text-secondary: rgba(0, 0, 0, 0.55);
+  --text-tertiary: rgba(0, 0, 0, 0.35);
+}
