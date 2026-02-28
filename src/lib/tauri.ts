@@ -24,7 +24,7 @@ export type StreamEvent =
 
 /** Start a Claude Code process for a thread */
 export async function startThread(opts: StartThreadOptions): Promise<void> {
-  await invoke("start_thread", opts);
+  await invoke("start_thread", opts as unknown as Record<string, unknown>);
 }
 
 /** Send user message to a running thread */

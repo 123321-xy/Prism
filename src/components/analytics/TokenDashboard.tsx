@@ -107,7 +107,7 @@ export function TokenDashboard() {
                 </Pie>
                 <Tooltip
                   contentStyle={{ background: "var(--bg-elevated)", border: "1px solid var(--border-default)", borderRadius: 8, fontSize: 11 }}
-                  formatter={(v: number) => [fmt(v) + " tokens"]}
+                  formatter={(v: unknown) => [fmt(Number(v)) + " tokens"]}
                 />
               </PieChart>
             </ResponsiveContainer>

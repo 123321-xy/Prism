@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, GitBranch, FolderOpen, Circle, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 import { useProjectStore } from "../../stores/projectStore";

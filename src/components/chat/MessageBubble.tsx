@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { User, Bot } from "lucide-react";
-import { type Message, useProjectStore } from "../../stores/projectStore";
+import { type Message } from "../../stores/projectStore";
 import { ReadCard } from "../tools/ReadCard";
 import { EditCard } from "../tools/EditCard";
 import { BashCard } from "../tools/BashCard";

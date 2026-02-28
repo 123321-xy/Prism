@@ -1,5 +1,5 @@
 import { useSettingsStore } from "../../stores/settingsStore";
-import { Moon, Sun, Monitor } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 
 export function SettingsPanel() {
   const { theme, setTheme, claudeCodePath, setClaudeCodePath, defaultWorkDir, setDefaultWorkDir, showTokenCount, toggleShowTokenCount, fontSize, setFontSize } = useSettingsStore();

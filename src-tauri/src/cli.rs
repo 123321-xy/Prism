@@ -12,7 +12,7 @@ use tokio::io::{AsyncBufReadExt, AsyncWriteExt, BufReader};
 use tokio::process::{Child, ChildStdin};
 use tokio::sync::Mutex;
 use tauri::{AppHandle, Emitter};
-use serde::{Deserialize, Serialize};
+use serde::Serialize;
 
 /// A running Claude process for one thread
 struct ThreadProcess {
@@ -42,7 +42,9 @@ pub enum FrontendEvent {
     ToolResult { id: String, result: String },
     Usage { input_tokens: u64, output_tokens: u64 },
     MessageStop,
+    #[allow(dead_code)]
     PermissionRequest { tool_id: String, tool_name: String, input: serde_json::Value },
+    #[allow(dead_code)]
     Error { message: String },
     ProcessExit { code: i32 },
 }
